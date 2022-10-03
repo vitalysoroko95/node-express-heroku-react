@@ -6,12 +6,12 @@ class MainController {
     res.setHeader(
       'Access-Control-Allow-Methods',
       'GET, POST, OPTIONS, PUT, PATCH, DELETE'
-    ); // If needed
+    ); 
     res.setHeader(
       'Access-Control-Allow-Headers',
       'X-Requested-With,content-type'
-    ); // If needed
-    res.setHeader('Access-Control-Allow-Credentials', true); // If needed
+    ); 
+    res.setHeader('Access-Control-Allow-Credentials', true);
 
     const table = await db.query(`SELECT * FROM public.items `);
     res.json(table.rows);
