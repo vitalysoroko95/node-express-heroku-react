@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const fetchTable = createAsyncThunk('main/fetchTable', async () => {
   const response = await axios.get(
-    'https://polar-plains-04741.herokuapp.com/api/table/',
+    'https://warm-wildwood-60715.herokuapp.com/api/table',
     {
       headers: {
         'Content-type': 'application/json',
